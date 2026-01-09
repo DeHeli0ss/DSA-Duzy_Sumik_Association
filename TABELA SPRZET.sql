@@ -6,5 +6,6 @@ CREATE TABLE fp_SPRZET(
     STAN_TECHNICZNY VARCHAR2(20) NOT NULL,
     CONSTRAINT fk_sprzet_czlonek_id_wlasciciela
     FOREIGN KEY(ID_wlasciciela)
-    REFERENCES FP_CZŁONEK_KLUBU(id_czlonka)
+    REFERENCES CZLONEK_KLUBU(id_czlonka)
+
 );
