@@ -1,0 +1,12 @@
+CREATE INDEX idx_czlonek_nazwisko ON CZLONEK_KLUBU(nazwisko);
+CREATE INDEX idx_czlonek_miasto ON CZLONEK_KLUBU(miejscowosc);
+CREATE INDEX idx_zdobycz_gatunek ON Zdobycz(Gatunek);
+CREATE INDEX idx_zdobycz_data ON Zdobycz(Data_polowu);
+CREATE INDEX idx_wyprawa_data_przyjazdu ON Wyprawa_wedkarska(Data_i_godzina_przyjazdu);
+CREATE INDEX idx_wyprawa_data_wyjazdu ON Wyprawa_wedkarska(Data_i_godzina_odjazdu);
+CREATE INDEX idx_karta_waznosc ON karta_wedkarska(data_waznosci);
+CREATE INDEX idx_sprzet_typ ON SPRZET(Typ);
+CREATE INDEX idx_wypozyczony_sprzet_data ON wypozyczony_sprzet(Długosc_wypozyczenia);
+CREATE INDEX idx_wypozyczony_sprzet_wypozyczenia ON wypozyczony_sprzet(poczatek_wypozyczenia);
+CREATE INDEX idx_zalegle_wypozyczenia_przetrzymanie ON zalegle_wypozyczenia(dlugosc_przetrzymania);
+CREATE INDEX idx_zwrocony_sprzet_data_zwrotu ON zwrocony_sprzet(data_zwrotu);
