@@ -4,8 +4,8 @@ CREATE TABLE Zdobycz(
     ID_sprzetu NUMBER(12) NOT NULL,
     ID_wyprawy NUMBER(12) NOT NULL,
     Gatunek VARCHAR2(100) NOT NULL,
-    MASA FLOAT(4) NOT NULL,
-    Dlugosc FLOAT(4) NOT NULL,
+    MASA NUMBER(5,2) NOT NULL,
+    Dlugosc NUMBER(5,2) NOT NULL,
     Data_polowu DATE NOT NULL,
     Opis VARCHAR2(300),
     CONSTRAINT fk_zdobycz FOREIGN KEY (ID_wedkarza) REFERENCES czlonek_klubu(ID_czlonka),
@@ -14,4 +14,5 @@ CREATE TABLE Zdobycz(
 
 
 );
+
 
