@@ -13,5 +13,7 @@ CREATE TABLE KONTO_SYSTEMOWE(
 ------------------------------------------------------------------------    
         CONSTRAINT check_logowanie CHECK
         (email is NOT NULL or nr_telefonu is NOT NULL)
+        
 );
+
 
