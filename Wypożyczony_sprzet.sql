@@ -1,7 +1,7 @@
 CREATE TABLE Wypozyczony_sprzet(
     ID_wypozczenia NUMBER(12) PRIMARY KEY,
     ID_sprzetu NUMBER(12) NOT NULL,
-    ID_osoby_wypozyczajacej NUMBER(12) NOT NULL,
+    ID_osoby_wypozyczajacej NUMBER(7) NOT NULL,
     Poczatek_wypozyczenia DATE NOT NULL,
     Długosc_wypozyczenia NUMBER(3) NOT NULL,
     Kwota_wypozyczenia NUMBER(6,2) NOT NULL,
@@ -10,4 +10,5 @@ CREATE TABLE Wypozyczony_sprzet(
 
 
 );
+
 
