@@ -14,11 +14,12 @@ CREATE TABLE CZLONEK_KLUBU(
             --lub 0-false gdyż nie to pytanie nie może 
             --przyjmować innych wartości
             CONSTRAINT check_kontakt
-            CHECK(email is NOT NULL OR nr_telefonu is NOT NULL),
+            CHECK(email is NOT NULL OR nr_telefonu is NOT NULL)
             --Sprawdzenie czy któryś z nich jest podany
             --(Logowanie dokonywane jest za pomocą emaila lub 
             --telefonu obie wartości nie moga być NULL!!!)
 );
+
 
 
 
