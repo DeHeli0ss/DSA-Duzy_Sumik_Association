@@ -17,11 +17,5 @@ CREATE TABLE CZLONEK_KLUBU(
             --Sprawdzenie czy któryś z nich jest podany
             --(Logowanie dokonywane jest za pomocą emaila lub 
             --telefonu obie wartości nie moga być NULL!!!)
-            CONSTRAINT fk_konto_czlonek_ID_czlonka FOREIGN KEY (ID_czlonka)
-            REFERENCES KONTO_SYSTEMOWE(ID_czlonka),
-            CONSTRAINT fk_konto_czlonek_nr_telefonu FOREIGN KEY(nr_telefonu)
-            REFERENCES KONTO_SYSTEMOWE(nr_telefonu),
-            CONSTRAINT fk_konto_czlonek_email FOREIGN KEY (email)
-            REFERENCES KONTO_SYSTEMOWE(email)
-
 );
+
