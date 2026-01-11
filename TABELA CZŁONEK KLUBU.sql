@@ -6,7 +6,7 @@ CREATE TABLE CZLONEK_KLUBU(
             miejscowosc VARCHAR2(30),
             nr_telefonu NUMBER(9) UNIQUE,
             email VARCHAR2(80) UNIQUE,
-            haslo VARCHAR(16) NOT NULL,
+            haslo VARCHAR2(16) NOT NULL,
             czy_Administrator NUMBER(1) DEFAULT 0 NOT NULL 
                 CHECK(czy_Administrator in(0,1)),
             --Członek nie jest admistratorem chyba że dostanie uprawnienia
@@ -19,5 +19,6 @@ CREATE TABLE CZLONEK_KLUBU(
             --(Logowanie dokonywane jest za pomocą emaila lub 
             --telefonu obie wartości nie moga być NULL!!!)
 );
+
 
 
