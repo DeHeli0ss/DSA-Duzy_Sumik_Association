@@ -12,3 +12,4 @@ CREATE TABLE Wypozyczony_sprzet(
 );
 
 
+
